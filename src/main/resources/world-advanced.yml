@@ -20,7 +20,7 @@
 # restrict lists).
 #
 # factions: To use with the Factions plugin. If the settings are set to true,
-# the explosions in wilderness or territory are ignored by CreeperHeal (blocks
+# the explosions in wilderness or territory are ignored by creeperheal (blocks
 # are destroyed normally).
 #
 

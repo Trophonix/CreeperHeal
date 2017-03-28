@@ -1,0 +1,39 @@
+package com.nitnelave.creeperheal.block;
+
+import org.bukkit.block.Banner;
+
+/**
+ * Banner implementation of CreeperBlock.
+ * 
+ * @author drexplosionpd
+ * 
+ */
+public class CreeperBanner extends CreeperBlock
+{
+	
+    /*
+     * Constructor.
+     */
+    CreeperBanner(Banner banner)
+    {
+        super(banner);
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see com.nitnelave.creeperheal.block.CreeperBlock#update()
+     */
+    @Override
+    public void update()
+    {
+        super.update();
+        Banner state = (Banner) getBlock().getState();
+        Banner banner = (Banner) blockState;
+        state.setBaseColor(banner.getBaseColor());
+        state.setPatterns(banner.getPatterns());
+
+        state.setData(banner.getData());
+        state.update(true);
+    }
+}
