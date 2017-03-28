@@ -18,8 +18,8 @@ import org.bukkit.plugin.Plugin;
 public class PluginHandler
 {
 
-    private static final MobArenaHandler maHandler = null;
-    private static final LWC lwc = null;
+    private static MobArenaHandler maHandler = null;
+    private static LWC lwc = null;
 
     private static final boolean spout;
 
